@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { PlusCircle, MinusCircle, Link as LinkIcon, Trash2 } from 'lucide-react';
+import { PlusCircle, MinusCircle, Link as LinkIcon, Trash2, Star } from 'lucide-react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addPoll, deletePoll } from '../store/pollsSlice';
 import { useNavigate } from 'react-router-dom';
@@ -50,6 +50,10 @@ const Home: React.FC = () => {
     // Tomar las primeras 5 encuestas (o menos si no hay suficientes)
     setPopularPolls(sortedPublicPolls.slice(0, 5));
   }, [polls]);
+
+  console.log("Polls:", polls);
+  console.log("Rendering Home Component");
+  console.log("Popular Polls:", popularPolls);
 
   const addOption = () => {
     setOptions([...options, '']);

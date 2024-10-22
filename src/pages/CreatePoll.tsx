@@ -59,7 +59,8 @@ const CreatePoll: React.FC = () => {
         isPublic,
         createdBy: user?.uid,
         createdAt: serverTimestamp(),
-        totalVotes: 0
+        totalVotes: 0,
+        stars: 0 // Initialize stars to 0
       });
 
       navigate(`/poll/${pollRef.id}`);

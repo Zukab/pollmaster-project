@@ -49,3 +49,12 @@ body {
 .break-words {
   word-break: break-word;
 }
+
+/* Add this to your CSS file */
+.star-icon {
+    transition: transform 0.2s;
+}
+
+.star-icon:hover {
+    transform: scale(1.2);
+}
