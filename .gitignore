@@ -18,3 +18,4 @@ yarn-error.log*
 
 # Firebase config (si tienes un archivo de configuración separado)
 src/firebase.ts
+src/.env
