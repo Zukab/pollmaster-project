@@ -63,7 +63,7 @@ const ViewPoll: React.FC = () => {
       </button>
       <h1 className="text-3xl font-bold mb-4">{poll.title}</h1>
       <p className="text-gray-600 mb-6">{poll.description}</p>
-
+    
       {/* Star Rating Section */}
       <div className="mb-4">
         <span className="text-lg font-semibold">Rate this poll:</span>
